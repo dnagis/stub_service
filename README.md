@@ -6,12 +6,12 @@
  Point de départ pour tout projet...
   
  Squelette (arborescence et Android.mk) tiré de development/samples/
- ##make StartVvnx (LOCAL_PACKAGE_NAME dans le Android.mk
+ ## make StartVvnx (LOCAL_PACKAGE_NAME dans le Android.mk
  
- ##adb uninstall com.example.android.startvvnx
+ ## adb uninstall com.example.android.startvvnx
  
  
- ##adb install out/target/product/mido/system/app/StartVvnx/StartVvnx.apk
+ ## adb install out/target/product/mido/system/app/StartVvnx/StartVvnx.apk
  ou
  adb install out/target/product/generic_arm64/system/app/StartVvnx/StartVvnx.apk
  
@@ -20,7 +20,7 @@
  indispensable, survit au reboot (tant que tu réinstalles pas l'appli), sinon app is in background uid null
  dumpsys deviceidle whitelist +com.example.android.startvvnx
  
- #am start-service com.example.android.startvvnx/.StartVvnx  
+ # am start-service com.example.android.startvvnx/.StartVvnx  
   
  
  logcat -s StartVvnx
